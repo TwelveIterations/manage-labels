@@ -1,5 +1,5 @@
 name: Manage Labels
-description: Manage Project Labels through a GitHub Actions workflow 
+description: Manage Project Labels through a GitHub Actions workflow
 author: Twelve Iterations
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
