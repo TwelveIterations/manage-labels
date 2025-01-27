@@ -1,0 +1,30 @@
+name: Manage Labels
+description: Manage Project Labels through a GitHub Actions workflow
+author: Twelve Iterations
+
+# Add your action's branding here. This will appear on the GitHub Marketplace.
+branding:
+  icon: heart
+  color: red
+
+# Define your inputs here.
+inputs:
+  source:
+    description: Your input description here
+    required: true
+    default: .github/labels.json
+  dry:
+    description: Dry run (no changes, log only)
+    required: false
+    default: 'true'
+  remove_missing:
+    description: Remove labels not present in the source data
+    required: false
+    default: 'false'
+
+# Define your outputs here.
+outputs: {}
+
+runs:
+  using: node20
+  main: dist/index.js
