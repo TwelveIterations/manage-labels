@@ -16,7 +16,7 @@ inputs:
   dry:
     description: Dry run (no changes, log only)
     required: false
-    default: 'false'
+    default: 'true'
   remove_missing:
     description: Remove labels not present in the source data
     required: false
