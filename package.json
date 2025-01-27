@@ -1,17 +1,17 @@
 {
-  "name": "javascript-action",
-  "description": "GitHub Actions JavaScript Template",
+  "name": "manage-labels",
+  "description": "Manage Project Labels through a GitHub Actions workflow",
   "version": "0.0.0",
-  "author": "",
+  "author": "Twelve Iterations",
   "type": "module",
   "private": true,
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://twelveiterations.com/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/TwelveIterations/manage-labels.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/TwelveIterations/manage-labels/issues"
   },
   "keywords": [
     "actions"
@@ -32,12 +32,13 @@
     "local-action": "npx local-action . src/main.js .env",
     "package": "npx rollup --config rollup.config.js",
     "package:watch": "npm run package -- --watch",
-    "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 npx jest",
+    "test": "npx --node-options=--experimental-vm-modules jest --setupFiles dotenv/config",
     "all": "npm run format:write && npm run lint && npm run test && npm run coverage && npm run package"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "dependencies": {
-    "@actions/core": "^1.11.1"
+    "@actions/core": "^1.11.1",
+    "@octokit/rest": "^21.1.0"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.5",
@@ -45,6 +46,7 @@
     "@jest/globals": "^29.7.0",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
+    "dotenv": "^16.4.7",
     "eslint": "^9.18.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-import": "^2.31.0",

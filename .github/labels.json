@@ -1,0 +1,22 @@
+{
+  "labels": [
+    {
+      "name": "docs",
+      "color": "0075ca",
+      "description": "Improvements or additions to documentation",
+      "previousName": "documentation"
+    },
+    {
+      "name": "Bug",
+      "color": "0075aa",
+      "description": "BROKEN",
+      "previousName": "bug"
+    },
+    {
+      "name": "Minecraft",
+      "color": "00bbaa",
+      "description": "uwu",
+      "previousName": "nope"
+    }
+  ]
+}
