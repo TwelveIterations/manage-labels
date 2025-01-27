@@ -41894,7 +41894,8 @@ async function run() {
     const repo = process.env.GITHUB_REPOSITORY.split('/')[1];
     const existingLabels = await octokit.rest.issues.listLabelsForRepo({
       owner,
-      repo
+      repo,
+      per_page: 100
     });
 
     const renamedLabels = desiredLabels
