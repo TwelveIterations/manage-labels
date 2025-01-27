@@ -1,0 +1,10 @@
+name: manage-labels
+on:
+  workflow_dispatch:
+jobs:
+  manage-labels:
+    runs-on: ubuntu-latest
+    name: manage-labels
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
