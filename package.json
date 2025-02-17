@@ -38,7 +38,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@actions/core": "^1.11.1",
-    "@octokit/rest": "^21.1.0",
+    "@octokit/rest": "^21.1.1",
     "js-yaml": "^4.1.0",
     "node-fetch": "^3.3.2"
   },
