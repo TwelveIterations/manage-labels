@@ -43,7 +43,7 @@
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.2.8",
+    "@eslint/compat": "^2.0.1",
     "@github/local-action": "^7.0.0",
     "@jest/globals": "^29.7.0",
     "@rollup/plugin-commonjs": "^28.0.3",
